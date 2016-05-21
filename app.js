@@ -5,12 +5,12 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 
-app.get("/", function(request, response) {
-  
-   response.send("<html><head></head><body><h1>FCC Timestamp Microservice API Basejump</h1></body></html>");
-});
+
+//Serve the static HTML to the client
+app.use("/", express.static(__dirname + "/public"));
 
 
+//If we get a URL parameter then do this
 app.get("/:time", function(request, response) {
   
     var date = Number(request.params.time);
