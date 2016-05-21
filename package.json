@@ -1,0 +1,24 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "First FCC API Basejump",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "moment": "^2.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aball6412/firstbasejump.git"
+  },
+  "author": "Aaron Thompkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aball6412/firstbasejump/issues"
+  },
+  "homepage": "https://github.com/aball6412/firstbasejump#readme"
+}
