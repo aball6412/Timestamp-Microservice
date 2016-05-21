@@ -2,8 +2,9 @@ var express = require("express");
 var moment = require("moment");
 var app = express();
 
-var port = process.env.PORT || 3000;
 
+//Set port for either production or development
+var port = process.env.PORT || 3000;
 
 
 //Serve the static HTML to the client
@@ -74,4 +75,4 @@ app.get("/:time", function(request, response) {
 });
 
 
-app.listen(3000);
+app.listen(port);
